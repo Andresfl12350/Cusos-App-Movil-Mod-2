@@ -52,7 +52,7 @@ class Login extends ConsumerWidget {
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        context.goNamed('cursos');
+                        context.go('/');
                       }
                     },
                     child: const SizedBox(

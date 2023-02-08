@@ -20,9 +20,7 @@ class MyApp extends ConsumerWidget {
         useMaterial3: true,
         colorScheme: lightColorScheme,
       ),
-      // darkTheme: ThemeData(
-      //   useMaterial3: true,
-      // 	colorScheme: darkColorScheme),
+      themeMode: ThemeMode.light,
       routerConfig: ref.read(routerProvider),
     );
   }
