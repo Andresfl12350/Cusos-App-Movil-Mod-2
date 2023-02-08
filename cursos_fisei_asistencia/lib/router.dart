@@ -1,3 +1,4 @@
+import 'package:cursos_fisei_asistencia/screens/camera.dart';
 import 'package:cursos_fisei_asistencia/screens/curso_details_screen.dart';
 import 'package:cursos_fisei_asistencia/screens/home.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -18,6 +19,13 @@ final routerProvider = Provider<GoRouter>((ref) {
             path: 'cursos/:id',
             name: 'curso',
             builder: (context, state) => CursoDetails(int.parse(state.params['id']!)),
+            routes: [
+              GoRoute(
+                path: 'camera',
+                name: 'camera',
+                builder: (context, state) => const CameraScreen(),
+              ),
+            ],
           ),
         ],
       ),
